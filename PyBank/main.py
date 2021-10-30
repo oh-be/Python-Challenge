@@ -3,7 +3,7 @@ import os
 import csv
 
 # file path
-input_file = os.path.join("Python-Challenge", "PyBank", "Resources", "budget_data.csv")
+input_file = os.path.join('Resources', 'budget_data.csv')
 
 # empty lists
 total_months = []
@@ -42,7 +42,6 @@ max_increase_month = monthly_profit_change.index(max(monthly_profit_change)) + 1
 max_decrease_month = monthly_profit_change.index(min(monthly_profit_change)) + 1
 
 # summary table / print statements
-
 print("Financial Analysis")
 print("_____________________________")
 print(f"Total Months: {len(total_months)}")
