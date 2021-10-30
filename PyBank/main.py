@@ -1,10 +1,9 @@
 # modules
 import os
 import csv
-from pathlib import Path
 
 # file path
-input_file = Path("Python-Challenge", "PyBank", "Resources", "budget_data.csv")
+input_file = os.path.join("Python-Challenge", "PyBank", "Resources", "budget_data.csv")
 
 # empty lists
 total_months = []
@@ -51,3 +50,5 @@ print(f"Total: ${sum(total_profit)}")
 print(f"Average Change: {round(sum(monthly_profit_change)/len(monthly_profit_change),2)}")
 print(f"Greatest Increase in Profits: {total_months[max_increase_month]} (${(str(max_increase_value))})")
 print(f"Greatest Decrease in Profits: {total_months[max_decrease_month]} (${(str(max_decrease_value))})")
+
+# Output files
