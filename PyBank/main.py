@@ -1,4 +1,6 @@
-# modules
+### PyBank - Python Challenge - Week 3
+
+#  modules
 import os
 import csv
 
@@ -10,7 +12,7 @@ total_months = []
 total_profit = []
 monthly_profit_change = []
 
-# open csv file in read mode
+# open csv file
 with open(input_file) as budget:
 
     # create variable for contents of file
@@ -45,8 +47,8 @@ max_decrease_month = monthly_profit_change.index(min(monthly_profit_change)) + 1
 print("Financial Analysis")
 print("_____________________________")
 print(f"Total Months: {len(total_months)}")
-print(f"Total: ${sum(total_profit)}")
-print(f"Average Change: {round(sum(monthly_profit_change)/len(monthly_profit_change),2)}")
+print(f"Total Profit/Loss: ${sum(total_profit)}")
+print(f"Average Change in Profit/Loss: {round(sum(monthly_profit_change)/len(monthly_profit_change),2)}")
 print(f"Greatest Increase in Profits: {total_months[max_increase_month]} (${(str(max_increase_value))})")
 print(f"Greatest Decrease in Profits: {total_months[max_decrease_month]} (${(str(max_decrease_value))})")
 
