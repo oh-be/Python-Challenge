@@ -53,6 +53,12 @@ correy_percent = (correy_votes/total_votes) * 100
 li_percent = (li_votes/total_votes) * 100
 otooley_percent = (otooley_votes/total_votes) * 100
 
+# find winner
+# create dictionary
+candidates_votes = {"Khan":khan_votes, "Correy":correy_votes, "Li":li_votes, "O'Tooley":otooley_votes}
+# find winner using max function on candidates vote dictionary
+winner = max(candidates_votes, key=candidates_votes.get)
+
 # copy pasted summary table from readme guide
 # and converted to f'strings plugging in results
 print(f"****Election Results****")
@@ -64,6 +70,6 @@ print(f"Correy: {correy_percent:.0f}% ({correy_votes})")
 print(f"Li: {li_percent:.0f}% ({li_votes})")
 print(f"O'Tooley: {otooley_percent:.0f}% ({otooley_votes})")
 print(f"-------------------------")
-print(f"Winner: ")
+print(f"Winner: {winner}")
 print(f"-------------------------")
 
