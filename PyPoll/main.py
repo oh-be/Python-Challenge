@@ -73,3 +73,21 @@ print(f"-------------------------")
 print(f"Winner: {winner}")
 print(f"-------------------------")
 
+# Output files
+output_file = os.path.join('analysis', 'poll_analysis.txt')
+
+#  Open the output file
+with open(output_file, "w") as file:
+    
+    # write data into text file
+    file.write(f"****Election Results****\n")
+    file.write(f"-------------------------\n")
+    file.write(f"Total Votes: {total_votes}\n")
+    file.write(f"-------------------------\n")
+    file.write(f"Khan: {khan_percent:.0f}% ({khan_votes})\n")
+    file.write(f"Correy: {correy_percent:.0f}% ({correy_votes})\n")
+    file.write(f"Li: {li_percent:.0f}% ({li_votes})\n")
+    file.write(f"O'Tooley: {otooley_percent:.0f}% ({otooley_votes})\n")
+    file.write(f"-------------------------\n")
+    file.write(f"Winner: {winner}\n")
+    file.write(f"-------------------------\n")
