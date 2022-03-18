@@ -4,7 +4,7 @@
 
 ## Financial Dataset
 
-![Revenue](Images/revenue-per-lead.png)
+![Revenue](Images/revenue-per-lead.png.icloud)
 
 * In this first dataset I created a Python script for analyzing the financial records a company. The dataset [budget_data.csv](PyBank/Resources/budget_data.csv) is composed of two columns: `Date` and `Profit/Losses`.
 
